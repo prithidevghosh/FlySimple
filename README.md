@@ -97,4 +97,4 @@ SESSION_SECRET_KEY ="your own key to encrypt the session information"
 *Test the APIs using any tool like <a href="https://www.postman.com/">Postman</a>*
 
 
-![Alt Text](images/Home.png)
+![Image](images/Home.png)
