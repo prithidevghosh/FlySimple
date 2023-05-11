@@ -46,6 +46,7 @@ module.exports.createSession = async (req, res) => {
             if (pass_compare) {
                 return res.status(200).json({
                     message: "session created successfully",
+                    user: userFetchedDb.email,
                     token: jwt.sign(userFetchedDb.toJSON(), process.env.JWT_SECRET_KEY, { expiresIn: 500 })
                 })
             } else {
