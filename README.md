@@ -13,6 +13,8 @@
 | --- |
 |`https://fly-simple-prod.vercel.app/`|
 
+<strong>*Note: PUT AIRPORT CODES (e.g. DEL for New Delhi) TO SEARCH THE FLIGHTS in the production link*
+
 <h3><i>Prerequisites</i></h3>
 <ul>
 <li>Node.js v14.15.0 or higher</li>
