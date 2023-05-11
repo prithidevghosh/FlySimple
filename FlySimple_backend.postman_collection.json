@@ -39,22 +39,25 @@
 		},
 		{
 			"name": "find flights",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"auth": {
 					"type": "bearer",
 					"bearer": [
 						{
 							"key": "token",
-							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDU5MjUxODkyZjg1YjgyNDFjYmJiZjYiLCJlbWFpbCI6IlByaXRodmlAZW1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkUldFVm5VUnNpcFlLYzJzZ09yT2gzZWQxaHdJRHlMdGVKQ2wvUFJQMXhmUmNNdGlrZExzMmkiLCJyb2xlIjoidXNlciIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMDhUMTY6MzY6NDAuMDc2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMDhUMTY6MzY6NDAuMDc2WiIsIl9fdiI6MCwiaWF0IjoxNjgzNTcyMDUyLCJleHAiOjE2ODM1NzI1NTJ9.grZBrLZJmq5SliB2SAeqd29s0J0KzYBmN2FcQvApv_k",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDU5MjUxODkyZjg1YjgyNDFjYmJiZjYiLCJlbWFpbCI6IlByaXRodmlAZW1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkUldFVm5VUnNpcFlLYzJzZ09yT2gzZWQxaHdJRHlMdGVKQ2wvUFJQMXhmUmNNdGlrZExzMmkiLCJyb2xlIjoidXNlciIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMDhUMTY6MzY6NDAuMDc2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMDhUMTY6MzY6NDAuMDc2WiIsIl9fdiI6MCwiaWF0IjoxNjgzNzgyNDcyLCJleHAiOjE2ODQyODI0NzJ9.rzJpc2rqABNcUVWEOdXh3TsZfD_pikR9XBkw51JzovY",
 							"type": "string"
 						}
 					]
 				},
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"source\":\"CCU\",\r\n    \"destination\":\"BOM\"\r\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -62,7 +65,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://fly-simple.vercel.app/api/flights/find",
+					"raw": "https://fly-simple.vercel.app/api/flights/tariff/ATQ/CCU/2023-05-20",
 					"protocol": "https",
 					"host": [
 						"fly-simple",
@@ -72,7 +75,10 @@
 					"path": [
 						"api",
 						"flights",
-						"find"
+						"tariff",
+						"ATQ",
+						"CCU",
+						"2023-05-20"
 					]
 				}
 			},
@@ -112,8 +118,14 @@
 		{
 			"name": "delete user session",
 			"request": {
-				"method": "GET",
-				"header": [],
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDU5MjUxODkyZjg1YjgyNDFjYmJiZjYiLCJlbWFpbCI6IlByaXRodmlAZW1haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkUldFVm5VUnNpcFlLYzJzZ09yT2gzZWQxaHdJRHlMdGVKQ2wvUFJQMXhmUmNNdGlrZExzMmkiLCJyb2xlIjoidXNlciIsImNyZWF0ZWRBdCI6IjIwMjMtMDUtMDhUMTY6MzY6NDAuMDc2WiIsInVwZGF0ZWRBdCI6IjIwMjMtMDUtMDhUMTY6MzY6NDAuMDc2WiIsIl9fdiI6MCwiaWF0IjoxNjgzNzc5OTM1LCJleHAiOjE2ODM3ODA0MzV9.0x9acoBo7ToTbNfSIzwWW-0AjHbyjNaoUNYWWyF_BMI",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "https://fly-simple.vercel.app/api/user/delete-session",
 					"protocol": "https",
