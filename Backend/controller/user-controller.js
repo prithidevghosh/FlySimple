@@ -48,7 +48,7 @@ module.exports.createSession = async (req, res) => {
                 return res.status(200).json({
                     message: "session created successfully",
                     user: userFetchedDb.email,
-                    token: jwt.sign(userFetchedDb.toJSON(), process.env.JWT_SECRET_KEY, { expiresIn: 500 })
+                    token: jwt.sign(userFetchedDb.toJSON(), process.env.JWT_SECRET_KEY, { expiresIn: 500000 })
                 })
             } else {
                 return res.status(400).json({
@@ -82,7 +82,7 @@ module.exports.deleteSession = function (req, res) {
         else {
             for (let i = 0; i < sessions.length; i++) {
                 const session = sessions[i];
-                // console.log(session.userId);
+                console.log(session.userId);
                 if (session.userId === userId) {
                     // Destroy the session
                     sessionStore.destroy(session.id, (err) => {
