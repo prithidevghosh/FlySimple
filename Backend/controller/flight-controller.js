@@ -63,6 +63,6 @@ module.exports.FINDFLIGHTS = async (req, res) => {
         // res.send(response.data.data);
     } catch (error) {
         console.error(error);
-        res.status(500).send('Error occurred,error is ', error);
+        res.status(500).json('Error occurred,error is ', error);
     }
 }
