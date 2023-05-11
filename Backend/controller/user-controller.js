@@ -44,6 +44,7 @@ module.exports.createSession = async (req, res) => {
         if (userFetchedDb) {
             let pass_compare = await bcrypt.compare(req.body.password, userFetchedDb.password);
             if (pass_compare) {
+                req.session.userId = userFetchedDb._id;
                 return res.status(200).json({
                     message: "session created successfully",
                     user: userFetchedDb.email,
@@ -68,6 +69,31 @@ module.exports.createSession = async (req, res) => {
 }
 
 module.exports.deleteSession = function (req, res) {
+    const token = req.headers.authorization.split(' ')[1];
+    const decoded = jwt.verify(token, process.env.JWT_SECRET_KEY);
+    const userId = decoded._id;
+
+    const sessionStore = req.sessionStore;
+
+    sessionStore.all((err, sessions) => {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            for (let i = 0; i < sessions.length; i++) {
+                const session = sessions[i];
+                // console.log(session.userId);
+                if (session.userId === userId) {
+                    // Destroy the session
+                    sessionStore.destroy(session.id, (err) => {
+                        if (err) {
+                            console.log(err);
+                        }
+                    });
+                }
+            }
+        }
+    })
     req.session.destroy(function (err) {
         if (err) {
             console.log(err);
