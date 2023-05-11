@@ -1,0 +1,109 @@
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem;
+  margin-top: 2rem;
+
+  &__heading {
+    color: #232323;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__error {
+    color: #ff0000;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &__field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+
+      &__label {
+        color: #232323;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      &__input {
+        border: none;
+        background-color: #f7f7f7;
+        padding: 0.8rem 1rem;
+        font-size: 1.2rem;
+        color: #232323;
+        border-radius: 0.3rem;
+        outline: none;
+
+        &:focus,
+        &:active {
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      &--email {
+        label {
+          @extend .signup__form__field__label;
+        }
+
+        input[type='email'] {
+          @extend .signup__form__field__input;
+        }
+      }
+
+      &--password {
+        label {
+          @extend .signup__form__field__label;
+        }
+
+        input[type='password'] {
+          @extend .signup__form__field__input;
+        }
+      }
+
+      &--confirm-password {
+        label {
+          @extend .signup__form__field__label;
+        }
+
+        input[type='password'] {
+          @extend .signup__form__field__input;
+        }
+      }
+
+      &--submit {
+        button[type='submit'] {
+          background-color: #2e2efe;
+          border: none;
+          color: #ffffff;
+          font-size: 1.2rem;
+          padding: 1rem 2rem;
+          border-radius: 0.3rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease-in-out;
+
+          &:hover {
+            background-color: darken(#2e2efe, 10%);
+          }
+        }
+      }
+    }
+  }
+  &__new {
+    margin-top: 0.1rem;
+    color: #232323;
+    font-size: 1.1rem;
+
+    &__login {
+      color: #2e2efe;
+      text-decoration: none;
+    }
+  }
+}

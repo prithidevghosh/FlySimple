@@ -1,0 +1,50 @@
+.flight-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 2rem;
+    width: 100%;
+    justify-content: space-around;
+    width: 80%;
+  
+    &__carrier-logo {
+      margin-right: 20px;
+      width: 80px;
+  
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  
+    &__details {
+  
+      & > div {
+        margin-bottom: 5px;
+        font-size: 14px;
+      }
+  
+      &__detail-flight-time {
+        display: flex;
+  
+        &__departure {
+          margin-right: 10px;
+        }
+      }
+  
+      &__detail-carrier-name {
+        font-weight: bold;
+      }
+  
+      &__detail-duration,
+      &__detail-fare-charge {
+        color: #666;
+      }
+  
+      &__detail-fare-charge {
+        font-weight: bold;
+      }
+    }
+  }
+  

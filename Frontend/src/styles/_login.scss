@@ -1,0 +1,95 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    margin-top: 5rem;
+
+    &__error {
+      color: #ff0000;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  
+    &__heading {
+      color: #232323;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+  
+    &__field {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+      width: 100%;
+  
+      &__label {
+        color: #232323;
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+      }
+  
+      &__input {
+        border: none;
+        background-color: #F7F7F7;
+        padding: 0.8rem 1rem;
+        font-size: 1.2rem;
+        color: #232323;
+        border-radius: 0.3rem;
+        outline: none;
+  
+        &:focus,
+        &:active {
+          box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+        }
+      }
+  
+      &--email {
+        label {
+          @extend .login__field__label;
+        }
+  
+        input[type="email"] {
+          @extend .login__field__input;
+        }
+      }
+  
+      &--password {
+        label {
+          @extend .login__field__label;
+        }
+  
+        input[type="password"] {
+          @extend .login__field__input;
+        }
+      }
+    }
+  
+    &__button {
+      background-color: #2E2EFE; 
+      border: none;
+      width: 100%;
+      color: #FFFFFF;
+      font-size: 1.2rem;
+      padding: 1rem 2rem;
+      border-radius: 0.3rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      margin-top: 1.5rem;
+  
+      &:hover {
+        background-color: darken(#2E2EFE, 10%);
+      }
+    }
+    &__new{
+        margin-top: 1rem;
+        color: #232323;
+        font-size: 1.1rem;
+
+        &__signup{
+            color: #2E2EFE;
+            text-decoration: none;
+        }
+    }
+  }
+  
