@@ -9,6 +9,10 @@
 <li>Search and view available flights between source and destination</li>
 </ul>
 
+|Deployed Link|
+| --- |
+|`https://fly-simple-prod.vercel.app/`|
+
 <h3><i>Prerequisites</i></h3>
 <ul>
 <li>Node.js v14.15.0 or higher</li>
@@ -16,7 +20,30 @@
 <li>MongoDB v4.4 or higher</li>
 </ul>
 
-<h3><i>Installation</i></h3>
+<h3><i>Frontend Installation</i></h3>
+
+## Clone the repo
+```bash
+
+git clone https://github.com/prithidevghosh/FlySimple.git
+
+```
+## Install the required packages
+```bash
+
+cd Frontend
+npm install
+
+```
+
+## Start the frontend locally
+```bash
+
+npm start
+
+```
+
+<h3><i>Backend Installation</i></h3>
 
 ## Clone the repo
 ```bash
