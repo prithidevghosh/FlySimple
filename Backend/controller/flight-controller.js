@@ -47,9 +47,7 @@ module.exports.FINDFLIGHTS = async (req, res) => {
             const myobj = {
                 "airline": response.data.data[i].itineraries[0].segments[0].operating,
                 "tariff": response.data.data[i].price.total,
-                "duration": response.data.data[i].itineraries[0].segments[0].duration,
-                "departure": response.data.data[i].itineraries[0].segments[1].departure.at,
-                "arrival": response.data.data[i].itineraries[0].segments[1].arrival.at
+                "duration": response.data.data[i].itineraries[0].segments[0].duration
             }
             arr.push(myobj)
         }
