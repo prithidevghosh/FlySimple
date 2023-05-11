@@ -41,15 +41,15 @@ module.exports.FINDFLIGHTS = async (req, res) => {
         // console.log(Object.keys(response.data.data).length);
         const obj = new Object();
         let arr = [];
-        // console.log(response.data.data[0].itineraries[1]);
+        console.log(response.data.data[0].itineraries[0].segments[1]);
         for (let i = 0; i < Object.keys(response.data.data).length; i++) {
             // mymap.set(response.data.data[i].itineraries[0].segments[0].operating, response.data.data[i].price.total)
             const myobj = {
                 "airline": response.data.data[i].itineraries[0].segments[0].operating,
                 "tariff": response.data.data[i].price.total,
-                "duration": response.data.data[i].itineraries[0].segments[0].duration
-                // "departure": response.data.data[i].itineraries[0].segments[1].departure.at,
-                // "arrival": response.data.data[i].itineraries[0].segments[1].arrival.at
+                "duration": response.data.data[i].itineraries[0].segments[0].duration,
+                "departure": response.data.data[i].itineraries[0].segments[1].departure.at,
+                "arrival": response.data.data[i].itineraries[0].segments[1].arrival.at
             }
             arr.push(myobj)
         }
