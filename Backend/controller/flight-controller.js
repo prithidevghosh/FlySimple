@@ -51,7 +51,7 @@ module.exports.FINDFLIGHTS = async (req, res) => {
                 "departure": response.data.data[i].itineraries[0].segments[1].departure.at,
                 "arrival": response.data.data[i].itineraries[0].segments[1].arrival.at
             }
-            arr.push(myobj);
+            arr.push(myobj)
         }
         return res.status(200).json({
             data: arr
