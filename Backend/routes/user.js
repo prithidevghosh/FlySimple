@@ -4,6 +4,6 @@ const userController = require('../controller/user-controller')
 
 ROUTER.post('/create', userController.CREATEUSER);
 ROUTER.post('/create-session', userController.createSession);
-ROUTER.get('/delete-session', userController.deleteSession)
+ROUTER.post('/delete-session', userController.deleteSession)
 
 module.exports = ROUTER;

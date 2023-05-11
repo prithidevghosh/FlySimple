@@ -1,439 +1,122 @@
-[
-    {
-        "source": "DEL",
-        "destination": "BOM",
-        "tariff": 3000,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "DEL",
-        "destination": "BOM",
-        "tariff": 5000,
-        "airline": "Vistara"
-    },
-    {
-        "source": "DEL",
-        "destination": "BOM",
-        "tariff": 4000,
-        "airline": "Air India"
-    },
-    {
-        "source": "DEL",
-        "destination": "BOM",
-        "tariff": 6000,
-        "airline": "Air Asia"
-    },
-    {
-        "source": "BOM",
-        "destination": "DEL",
-        "tariff": 3500,
-        "airline": "Air India"
-    },
-    {
-        "source": "BLR",
-        "destination": "MAA",
-        "tariff": 2500,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "MAA",
-        "destination": "BLR",
-        "tariff": 2800,
-        "airline": "Vistara"
-    },
-    {
-        "source": "CCU",
-        "destination": "HYD",
-        "tariff": 4000,
-        "airline": "GoAir"
-    },
-    {
-        "source": "HYD",
-        "destination": "CCU",
-        "tariff": 4500,
-        "airline": "Air Asia"
-    },
-    {
-        "source": "PNQ",
-        "destination": "GOI",
-        "tariff": 2000,
-        "airline": "Air India"
-    },
-    {
-        "source": "GOI",
-        "destination": "PNQ",
-        "tariff": 2200,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "AMD",
-        "destination": "DEL",
-        "tariff": 3500,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "DEL",
-        "destination": "AMD",
-        "tariff": 3800,
-        "airline": "Vistara"
-    },
-    {
-        "source": "BOM",
-        "destination": "CCU",
-        "tariff": 4500,
-        "airline": "GoAir"
-    },
-    {
-        "source": "CCU",
-        "destination": "BOM",
-        "tariff": 5000,
-        "airline": "Air Asia"
-    },
-    {
-        "source": "DEL",
-        "destination": "HYD",
-        "tariff": 4000,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "HYD",
-        "destination": "DEL",
-        "tariff": 4500,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "MAA",
-        "destination": "PNQ",
-        "tariff": 3000,
-        "airline": "Air India"
-    },
-    {
-        "source": "PNQ",
-        "destination": "MAA",
-        "tariff": 3200,
-        "airline": "Vistara"
-    },
-    {
-        "source": "CCU",
-        "destination": "MAA",
-        "tariff": 3500,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "MAA",
-        "destination": "CCU",
-        "tariff": 3800,
-        "airline": "Air India"
-    },
-    {
-        "source": "DEL",
-        "destination": "BLR",
-        "tariff": 5000,
-        "airline": "GoAir"
-    },
-    {
-        "source": "BLR",
-        "destination": "DEL",
-        "tariff": 5500,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "PNQ",
-        "destination": "AMD",
-        "tariff": 2500,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "AMD",
-        "destination": "PNQ",
-        "tariff": 2700,
-        "airline": "Vistara"
-    },
-    {
-        "source": "BOM",
-        "destination": "HYD",
-        "tariff": 4000,
-        "airline": "Air India"
-    },
-    {
-        "source": "HYD",
-        "destination": "BOM",
-        "tariff": 4500,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "BLR",
-        "destination": "CCU",
-        "tariff": 4500,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "CCU",
-        "destination": "BLR",
-        "tariff": 5000,
-        "airline": "Air Asia"
-    },
-    {
-        "source": "MAA",
-        "destination": "DEL",
-        "tariff": 4500,
-        "airline": "GoAir"
-    },
-    {
-        "source": "DEL",
-        "destination": "MAA",
-        "tariff": 5000,
-        "airline": "Vistara"
-    },
-    {
-        "source": "AMD",
-        "destination": "BLR",
-        "tariff": 2500,
-        "airline": "Air India"
-    },
-    {
-        "source": "BLR",
-        "destination": "AMD",
-        "tariff": 2700
-    },
-    {
-        "source": "IXC",
-        "destination": "BLR",
-        "tariff": 4500,
-        "airline": "GoAir"
-    },
-    {
-        "source": "BLR",
-        "destination": "IXC",
-        "tariff": 4700,
-        "airline": "AirAsia"
-    },
-    {
-        "source": "IXB",
-        "destination": "COK",
-        "tariff": 5500,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "COK",
-        "destination": "IXB",
-        "tariff": 5800,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "ATQ",
-        "destination": "CCU",
-        "tariff": 6000,
-        "airline": "Air India"
-    },
-    {
-        "source": "CCU",
-        "destination": "ATQ",
-        "tariff": 6500,
-        "airline": "Vistara"
-    },
-    {
-        "source": "JAI",
-        "destination": "BBI",
-        "tariff": 4000,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "BBI",
-        "destination": "JAI",
-        "tariff": 4200,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "VGA",
-        "destination": "IXR",
-        "tariff": 7000,
-        "airline": "AirAsia"
-    },
-    {
-        "source": "IXR",
-        "destination": "VGA",
-        "tariff": 7500,
-        "airline": "GoAir"
-    },
-    {
-        "source": "DED",
-        "destination": "BOM",
-        "tariff": 5000,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "BOM",
-        "destination": "DED",
-        "tariff": 5200,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "STV",
-        "destination": "DEL",
-        "tariff": 6000,
-        "airline": "Vistara"
-    },
-    {
-        "source": "DEL",
-        "destination": "STV",
-        "tariff": 6500,
-        "airline": "Air India"
-    },
-    {
-        "source": "IXC",
-        "destination": "HYD",
-        "tariff": 4500,
-        "airline": "GoAir"
-    },
-    {
-        "source": "HYD",
-        "destination": "IXC",
-        "tariff": 4800,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "COK",
-        "destination": "BLR",
-        "tariff": 3500,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "BLR",
-        "destination": "COK",
-        "tariff": 3800,
-        "airline": "AirAsia"
-    },
-    {
-        "source": "JAI",
-        "destination": "GAU",
-        "tariff": 5500,
-        "airline": "Vistara"
-    },
-    {
-        "source": "GAU",
-        "destination": "JAI",
-        "tariff": 6000,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "PAT",
-        "destination": "DEL",
-        "tariff": 5500,
-        "airline": "Vistara"
-    },
-    {
-        "source": "DEL",
-        "destination": "PAT",
-        "tariff": 6000,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "VNS",
-        "destination": "BOM",
-        "tariff": 7000,
-        "airline": "Air India"
-    },
-    {
-        "source": "BOM",
-        "destination": "VNS",
-        "tariff": 7500,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "JAI",
-        "destination": "BLR",
-        "tariff": 6000,
-        "airline": "Vistara"
-    },
-    {
-        "source": "BLR",
-        "destination": "JAI",
-        "tariff": 6500,
-        "airline": "AirAsia"
-    },
-    {
-        "source": "IXC",
-        "destination": "CCU",
-        "tariff": 5500,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "CCU",
-        "destination": "IXC",
-        "tariff": 6000,
-        "airline": "GoAir"
-    },
-    {
-        "source": "MAA",
-        "destination": "HYD",
-        "tariff": 3000,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "HYD",
-        "destination": "MAA",
-        "tariff": 3500,
-        "airline": "Air India"
-    },
-    {
-        "source": "CCU",
-        "destination": "BLR",
-        "tariff": 4500,
-        "airline": "AirAsia"
-    },
-    {
-        "source": "BLR",
-        "destination": "CCU",
-        "tariff": 5000,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "IXC",
-        "destination": "DEL",
-        "tariff": 3500,
-        "airline": "SpiceJet"
-    },
-    {
-        "source": "DEL",
-        "destination": "IXC",
-        "tariff": 4000,
-        "airline": "Air India"
-    },
-    {
-        "source": "GOI",
-        "destination": "BLR",
-        "tariff": 3000,
-        "airline": "Vistara"
-    },
-    {
-        "source": "BLR",
-        "destination": "GOI",
-        "tariff": 3500,
-        "airline": "AirAsia"
-    },
-    {
-        "source": "IXR",
-        "destination": "BOM",
-        "tariff": 5000,
-        "airline": "IndiGo"
-    },
-    {
-        "source": "BOM",
-        "destination": "IXR",
-        "tariff": 5500,
-        "airline": "Air India"
-    },
-    {
-        "source": "TRV",
-        "destination": "MAA",
-        "tariff": 4000,
-        "airline": "GoAir"
-    },
-    {
-        "source": "MAA",
-        "destination": "TRV",
-        "tariff": 4500,
-        "airline": "Vistara"
+{
+    "6E": {
+        "name": "IndiGo",
+        "logo": "https://logo.clearbit.com/goindigo.in"
+    },
+    "AI": {
+        "name": "Air India",
+        "logo": "https://logo.clearbit.com/airindia.in"
+    },
+    "G8": {
+        "name": "GoAir",
+        "logo": "https://logo.clearbit.com/goair.in"
+    },
+    "SG": {
+        "name": "SpiceJet",
+        "logo": "https://logo.clearbit.com/spicejet.com"
+    },
+    "UK": {
+        "name": "Vistara",
+        "logo": "https://logo.clearbit.com/airvistara.com"
+    },
+    "I5": {
+        "name": "AirAsia India",
+        "logo": "https://logo.clearbit.com/airasia.co.in"
+    },
+    "9I": {
+        "name": "Alliance Air",
+        "logo": ""
+    },
+    "4T": {
+        "name": "Air Deccan",
+        "logo": ""
+    },
+    "IX": {
+        "name": "Air India Express",
+        "logo": "https://logo.clearbit.com/airindiaexpress.in"
+    },
+    "CD": {
+        "name": "Air India Regional",
+        "logo": "https://logo.clearbit.com/airindia.in"
+    },
+    "EY": {
+        "name": "Etihad Airways",
+        "logo": "https://logo.clearbit.com/etihad.com"
+    },
+    "MH": {
+        "name": "Malaysia Airlines",
+        "logo": "https://logo.clearbit.com/malaysiaairlines.com"
+    },
+    "LH": {
+        "name": "Lufthansa",
+        "logo": "https://logo.clearbit.com/lufthansa.com"
+    },
+    "QR": {
+        "name": "Qatar Airways",
+        "logo": "https://logo.clearbit.com/qatarairways.com"
+    },
+    "EK": {
+        "name": "Emirates",
+        "logo": "https://logo.clearbit.com/emirates.com"
+    },
+    "SQ": {
+        "name": "Singapore Airlines",
+        "logo": "https://logo.clearbit.com/singaporeair.com"
+    },
+    "TG": {
+        "name": "Thai Airways",
+        "logo": "https://logo.clearbit.com/thaiairways.com"
+    },
+    "TK": {
+        "name": "Turkish Airlines",
+        "logo": "https://logo.clearbit.com/turkishairlines.com"
+    },
+    "9W": {
+        "name": "Jet Airways",
+        "logo": "https://logo.clearbit.com/jetairways.com"
+    },
+    "S2": {
+        "name": "JetLite",
+        "logo": ""
+    },
+    "Y4": {
+        "name": "Vistara",
+        "logo": "https://logo.clearbit.com/airvistara.com"
+    },
+    "WY": {
+        "name": "Oman Air",
+        "logo": "https://logo.clearbit.com/omanair.com"
+    },
+    "O6": {
+        "name": "Avianca Brazil",
+        "logo": ""
+    },
+    "AF": {
+        "name": "Air France",
+        "logo": "https://logo.clearbit.com/airfrance.com"
+    },
+    "KL": {
+        "name": "KLM Royal Dutch Airlines",
+        "logo": "https://logo.clearbit.com/klm.com"
+    },
+    "SU": {
+        "name": "Aeroflot",
+        "logo": "https://logo.clearbit.com/aeroflot.ru"
+    },
+    "SV": {
+        "name": "Saudia",
+        "logo": "https://logo.clearbit.com/saudia.com"
+    },
+    "UA": {
+        "name": "United Airlines",
+        "logo": "https://logo.clearbit.com/united.com"
+    },
+    "VS": {
+        "name": "Virgin Atlantic",
+        "logo": "https://logo.clearbit.com/virginatlantic.com"
+    },
+    "YY": {
+        "name": "Alliance Air",
+        "logo": ""
     }
-]
+}
