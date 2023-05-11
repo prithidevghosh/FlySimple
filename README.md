@@ -63,6 +63,6 @@ SESSION_SECRET_KEY ="your own key to encrypt the session information"
 | `/api/user/create` | POST | Create a new user |
 | `/api/user/create-session` | POST | Create a session for user / Logging In User |
 | `/api/user/delete-session` | POST | Deleting session for user / Signing Out User |
-| `/api/flights/tariff/{source}/{destination}/{date}` | POST | Find flights between two airports |
+| `/api/flights/tariff/{source}/{destination}/{date}` | GET | Find flights between two airports |
 
 *Test the APIs using any tool like <a href="https://www.postman.com/">Postman</a>*
