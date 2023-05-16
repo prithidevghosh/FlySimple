@@ -95,3 +95,26 @@ SESSION_SECRET_KEY ="your own key to encrypt the session information"
 | `/api/flights/tariff/{source}/{destination}/{date}` | GET | Find flights between two airports |
 
 *Test the APIs using any tool like <a href="https://www.postman.com/">Postman</a>*
+
+ <h3><i>Screenshots</i></h3>
+  
+![Image](images/Home.png)
+  
+*Fig: Home Screen*
+  
+![Image](images/login.png)
+  
+*Fig: Login Screen*
+ 
+![Image](images/signup.png)
+  
+*Fig: Signup Screen*
+  
+![Image](images/flightsearch.png)
+  
+*Fig: FlightSearch Screen*
+  
+![Image](images/results.png)
+  
+*Fig: search result Screen*
+
