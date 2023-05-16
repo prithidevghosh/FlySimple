@@ -4,13 +4,13 @@ import { Link, useNavigate } from 'react-router-dom';
 import { authContext } from '../context';
 
 const Login = () => {
-  const { handleLogin, loading, isLoggedInToken, isLogged } = useContext(authContext);
+  const { handleLogin, loading, isLoggedInToken, isLogged, errorMsg } = useContext(authContext);
   const route = useNavigate();
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errorMessage, setErrorMessage] = useState('');
-  
+
   useEffect(() => {
     if (isLoggedInToken() || isLogged) {
       route('/')
@@ -32,11 +32,11 @@ const Login = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if(email < 1) {
+    if (email < 1) {
       setErrorMessage('Email cannot be empty!');
       handleErrorTimer();
       return
-    }else if(password < 1) {
+    } else if (password < 1) {
       setErrorMessage('Password must be atleast 6 characters long!');
       handleErrorTimer();
       return
@@ -48,7 +48,7 @@ const Login = () => {
   return (
     <form className="login">
       <h2 className="login__heading">Login</h2>
-      <p className='login__error'>{errorMessage}</p>
+      <p className='login__error'>{errorMessage}{errorMsg}</p>
       <div className="login__field login__field--email">
         <label htmlFor="email" className="login__field__label">Email</label>
         <input
@@ -73,7 +73,7 @@ const Login = () => {
         {loading ? 'Logging In' : 'Log In'}
       </button>
       <div className='login__new'>New User ?<span>{' '}
-      <Link className='login__new__signup' to='/signup'>Sign up</Link>
+        <Link className='login__new__signup' to='/signup'>Sign up</Link>
       </span></div>
     </form>
   );

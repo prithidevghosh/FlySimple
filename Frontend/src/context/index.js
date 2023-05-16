@@ -11,7 +11,14 @@ const AuthProvider = ({ children }) => {
   const [loadingFlight, setLoadingFlight] = useState(false);
   const [isLogged, setIsLogged] = useState(false);
   const [flightData, setFlightData] = useState([]);
+  const [errorMsg, setErrorMsg] = useState('');
   const route = useNavigate()
+
+  const handleErrorMsg = () => {
+    setTimeout(() => {
+      setErrorMsg('');
+    }, 2500);
+  }
 
   const isLoggedInToken = () => {
     const token = localStorage.getItem('token');
@@ -33,8 +40,11 @@ const AuthProvider = ({ children }) => {
     try {
       setLoading(true);
       const response = await fetchLogin(user.email, user.password);
+      // console.log(response);
       if (response.message === 'session created successfully') {
         setUserEmail(response.user);
+        // console.log(response.token);
+        // console.log(JSON.stringify(response.token));
         localStorage.setItem('token', JSON.stringify(response.token));
         localStorage.setItem('userEmail', JSON.stringify(response.user));
         setIsLogged(true);
@@ -42,7 +52,12 @@ const AuthProvider = ({ children }) => {
       }
     } catch (error) {
       console.log(error);
+      if (error.response)
+        setErrorMsg(error.response.data.message);
+      else
+        setErrorMsg(error.message);
     } finally {
+      handleErrorMsg()
       setLoading(false);
     }
   };
@@ -56,7 +71,12 @@ const AuthProvider = ({ children }) => {
       }
     } catch (error) {
       console.log(error);
+      if (error.response)
+        setErrorMsg(error.response.data.message);
+      else
+        setErrorMsg(error.message);
     } finally {
+      handleErrorMsg()
       setLoadingSignUp(false);
     }
   };
@@ -72,22 +92,32 @@ const AuthProvider = ({ children }) => {
         setUserEmail('');
         setFlightData([]);
       }
-    } catch (err) {
-      console.log(err);
+    } catch (error) {
+      console.log(error);
+      if (error.response)
+        setErrorMsg(error.response.data.message);
+      else
+        setErrorMsg(error.message);
     } finally {
+      handleErrorMsg()
       setLoading(false);
     }
   };
 
-  const handleExplore =async (src, dest, date) => {
+  const handleExplore = async (src, dest, date) => {
     try {
       setLoadingFlight(true);
       const token = JSON.parse(localStorage.getItem('token'));
       const response = await fetchFlight(src, dest, date, token);
       setFlightData(response.data);
-    } catch (err) {
-      console.log(err);
-    } finally { 
+    } catch (error) {
+      console.log(error);
+      if (error.response)
+        setErrorMsg(error.response.data.message);
+      else
+        setErrorMsg(error.message);
+    } finally {
+      handleErrorMsg()
       setLoadingFlight(false);
     }
   };
@@ -106,6 +136,7 @@ const AuthProvider = ({ children }) => {
     getUserEmail,
     loadingFlight,
     flightData,
+    errorMsg,
   };
   return <authContext.Provider value={value}>{children}</authContext.Provider>;
 };
